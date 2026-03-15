@@ -1,4 +1,10 @@
 __pycache__/ 
+.pytest_cache/ 
 *.pyc 
 venv/ 
 .env
+
+data/
+*.word
+*.pdf
+*.dat
