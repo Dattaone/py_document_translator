@@ -14,3 +14,8 @@ class ParagraphUnit:
     text    : str
     level   : int | None = None #solo si es heading
 
+@dataclass
+class Chunk:
+    id              : int
+    paragraph_ids   : list[int]
+    text            : str

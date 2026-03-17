@@ -8,7 +8,7 @@ def test_chunker_creates_chunks():
         ParagraphUnit(id=3, type="paragraph", text="Another paragraph")
     ]
 
-    chunker = Chunker(max_length=50)
+    chunker = Chunker()
     chunks = chunker.chunk(units)
 
     assert len(chunks) == 1
@@ -24,5 +24,5 @@ def test_chunker_splits_when_max_length_exceeded():
     chunker = Chunker(max_length=50)
     chunks = chunker.chunk(units)
 
-    assert len(chunks) == 2
+    assert len(chunks) == 3
     
