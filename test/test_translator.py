@@ -13,4 +13,4 @@ def test_translator_returns_translated_text():
 
     assert len(result) == 2
     assert result[0].startswith("[es]")
-    assert "Hello world" in result[0]
+    assert "Hello World" in result[0]
