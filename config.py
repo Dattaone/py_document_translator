@@ -1,4 +1,6 @@
+import os
 import sys
+from dotenv import load_dotenv
 from pathlib import Path
 
 APP_NAME = "py_document_translator"
@@ -24,3 +26,6 @@ def ensure_dirs():
         path.mkdir(parents=True,exist_ok=True)
 
 ensure_dirs()
+load_dotenv()
+
+DEEPL_API_KEY = os.getenv("DEEPL_API_KEY")

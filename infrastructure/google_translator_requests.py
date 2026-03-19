@@ -3,7 +3,7 @@ from ports.translation_client import TranslationClient
 from domain.models import Chunk
 
 
-class GoogleTranslator(TranslationClient):
+class GoogleTranslatorRequests(TranslationClient):
 
     def _init_(self):
         self.url_translator = "https://translate.googleapis.com/translate_a/single"

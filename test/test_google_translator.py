@@ -1,8 +1,9 @@
-from infrastructure.google_translate_client import GoogleTranslator
+from infrastructure.google_translator_requests import GoogleTranslatorRequests
+from infrastructure.google_translator_lib import GoogleTranslatorLib
 from domain.models import Chunk
 
 def test_google_translator_basic():
-    translator = GoogleTranslator()
+    translator = GoogleTranslatorLib()
 
     chunks = [
         Chunk(id=1, paragraph_ids=[1], text="Hello world")

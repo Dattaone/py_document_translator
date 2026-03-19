@@ -12,10 +12,6 @@ class Chunker:
         self.max_length = max_length
 
     def chunk(self, units: list[ParagraphUnit]) -> list[Chunk]:
-        """
-        Divide el texto en fragmentos (chunks) de un máximo de `max_length` caracteres.
-        Útil para procesar o traducir textos largos en partes manejables.
-        """
         chunks = []
         paragraph_ids = []
         text = ""
