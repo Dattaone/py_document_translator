@@ -1,7 +1,7 @@
 import requests
 from config import DEEPL_API_KEY
 
-from ports.translation_client import TranslationClient
+from application.ports.translation_client import TranslationClient
 from domain.models import Chunk
 
 class GoogleTranslatorLib(TranslationClient):

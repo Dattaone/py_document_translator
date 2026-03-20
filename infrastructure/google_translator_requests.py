@@ -1,5 +1,5 @@
 import requests
-from ports.translation_client import TranslationClient
+from application.ports.translation_client import TranslationClient
 from domain.models import Chunk
 
 

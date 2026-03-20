@@ -1,4 +1,4 @@
-from application.chunker import Chunker
+from application.services.chunker import Chunker
 from domain.models import ParagraphUnit
 
 def test_chunker_creates_chunks():
