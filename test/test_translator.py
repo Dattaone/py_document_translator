@@ -1,12 +1,12 @@
-from infrastructure.fake_translator import FakeTranslator
-from domain.models import Chunk
+from infrastructure.translators.fake_translator import FakeTranslator
+from domain.entities.chunk import Chunk
 
 def test_translator_returns_translated_text():
     translator = FakeTranslator()
 
     chunks= [
-        Chunk(id=1, paragraph_ids=[1,2], text="Hello World"),
-        Chunk(id=2, paragraph_ids=[3], text="Goodbye")
+        Chunk(id=1, unit_ids=[1,2], text="Hello World"),
+        Chunk(id=2, unit_ids=[3], text="Goodbye")
     ]
 
     result = translator.translate(chunks,target_lang="es")

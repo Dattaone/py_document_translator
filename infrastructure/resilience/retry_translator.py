@@ -1,8 +1,8 @@
 import time
-from application.ports import TranslationClient
+from application.ports.translator_port import TranslatorPort
 
-class RetryTranslator(TranslationClient):
-    def __init__(self, translator:TranslationClient, retries=3):
+class RetryTranslator(TranslatorPort):
+    def __init__(self, translator:TranslatorPort, retries=3):
         self.translator = translator
         self.retries = retries
 

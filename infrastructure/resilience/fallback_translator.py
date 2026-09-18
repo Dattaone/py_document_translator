@@ -1,6 +1,6 @@
-from application.ports.translation_client import TranslationClient
-from application.resilience.retry_translator import  RetryTranslator
-class FallbackTranslator(TranslationClient):
+from application.ports.translator_port import TranslatorPort
+from infrastructure.resilience.retry_translator import  RetryTranslator
+class FallbackTranslator(TranslatorPort):
     def __init__(self, primary, secondary):
         self.primary = primary
         self.secondary = secondary

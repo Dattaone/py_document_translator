@@ -8,3 +8,8 @@ data/
 *.word
 *.pdf
 *.dat
+*.txt
+
+extractor_text_proyect.py
+
+README.md
